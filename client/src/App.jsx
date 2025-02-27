@@ -4,6 +4,7 @@ import Layout from "./Layout";
 import Home from "./pages/Home";
 import DoctorLogin from "./pages/Doctorlogin";
 import SearchDoctor from "./pages/SearchDoctor";
+import DoctorDashBoard from "./DoctorDashboard";
 
 
 
@@ -15,7 +16,7 @@ const App=()=>{
         <Route path="/" element={<Layout/>}>
         <Route path="/home" element={<Home/>} />
         <Route path="doctorlogin" element={<DoctorLogin/>}/>
-        <Route path="doctorlogin" element={<SearchDoctor/>}/>
+        <Route path="doctorsearch" element={<SearchDoctor/>}/>
         
         </Route>
       </Routes>

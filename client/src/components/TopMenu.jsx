@@ -47,13 +47,15 @@ const TopMenu=()=>{
     }
     return(
         <>
-           <Navbar bg="primary" data-bs-theme="dark">
+           <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="#home">Online E-Appointment</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/home">Home</Nav.Link>
            
             <Nav.Link as={Link}  onClick={handleShow}>Doctor Registration</Nav.Link>
+            <Nav.Link as={Link} to="/doctorlogin" >Doctor Login</Nav.Link>
+            <Nav.Link as={Link} to="/doctorsearch">Search doctor</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

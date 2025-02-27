@@ -26,17 +26,17 @@ useEffect(()=>{
 const ans= mydata.map((key)=>{
     return(
         <>
-           <Card style={{ width: '18rem' }}>
+           <Card style={{ width: '18rem',backgroundColor:"lightgrey",marginBottom:"20px"}}>
       <Card.Body>
-        <Card.Title>{key.name}</Card.Title>
+        <Card.Title> <h3 > {key.name} </h3></Card.Title>
         <Card.Text>
-          {key.specialization}
-         <div> Address : {key.address}</div>
+         <h5> {key.specailization}</h5>
+         <div>  Address : {key.address} </div>
         <div>   City : {key.city} </div>
          <div>  Mobile : {key.mobile}</div>
           Email : {key.email}
         </Card.Text>
-        <Button variant="primary">Appointment Now!</Button>
+        <Button style={{backgroundColor:"teal"}} variant="primary">Appointment Now!</Button>
       </Card.Body>
     </Card>
         
@@ -48,9 +48,13 @@ const ans= mydata.map((key)=>{
 
     return(
         <>
-          <h1> Welcome To Online Appointment System</h1>
-
+         <div>
+            <img src="/public/hr1.jpg" alt="" style={{width:"100%",height:"120vh"}} />
+         </div>
+        
+         <h1 style={{color:"black",marginLeft:"20px",marginTop:"10px",marginBottom:"30px",textDecoration:"underline",textAlign:"center"}}>DOCTORS DETAILS</h1>
         <div id="homeDoctors">
+           
         {ans}
         </div>
          

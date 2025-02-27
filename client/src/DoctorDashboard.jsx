@@ -13,10 +13,10 @@ const DoctorDashBoard=()=>{
         <>
           <div style={{backgroundColor:"lightblue"}}>  
             
-                <h1> Welcome To Doctor Admin Panel</h1>
+                <h1 > Welcome To Doctor Admin Panel</h1>
                 
              </div>
-             <div style={{textAlign:"right", backgroundColor:"yellow", padding:"20px", color:"blue"}}>
+             <div style={{textAlign:"right", backgroundColor:"blue", padding:"20px", color:"blue"}}>
                  Welcome : {localStorage.getItem("name")}
                  Emial : {localStorage.getItem("email")}
 
