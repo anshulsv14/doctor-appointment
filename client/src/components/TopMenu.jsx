@@ -10,7 +10,8 @@ import { Link } from 'react-router-dom';
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import BASE_URL from '../Config';
+import BASE_URL from '../config';
+
 
 
 const TopMenu=()=>{
